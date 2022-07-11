@@ -1,54 +1,106 @@
-    .background-image {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@100&display=swap');
+@font-face {
+    font-family: Perfograma;
+    src: url(fonts/Perfograma.otf);
+}
+@font-face {
+    font-family: Gidole;
+    src: url(fonts/Gidole-Regular.ttf); 
+}
+body {
+    background-color: #FCF6F5FF;
+    margin: 0px;
+    font-family: lato, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
 
-    }
+.background-image {
+    background-image: url(images/wolfgang-hasselmann-VaWHG-N73lc-unsplash\ \(1\).jpg);
+    padding: 50vh 10vw;
+    background-size: cover;
+}
 
-    .logo {
+.logo {
+    position: relative;
+    bottom: 400px;
+    color: white;
+    font-family: Raleway;
+    font-size: 5rem;
+}
 
-    }
+.content {
 
-    .content {
+    margin: 100px;
+}
 
-    }
+.main-title {
+    margin-top: 20px;
+    font-size: 2rem;
+}
 
-    .main-title {
+.sub-title {
+    font-size: 1.7rem;
+}
+.form {
+    background-color: white;
+}
 
-    }
+.form-header {
+    font-size: 1.7rem;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
-    .sub-title {}
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    h2 {
-        
-    }
-
-    .first-name {
-
-    }
-
-    .email {
-
-    }
-
-    .password {
-
-    }
-
-    .last-name {
-
-    }
-
-    .phone-number {
-
-    }
-
-    .confirm-password {
-
-    }
-    .register {
-
-    }
-
-    .login {
-
-    }
+input {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 5px;
+}
 
 
+.first-name {
+
+}
+
+.email {
+
+}
+
+.password {
+
+}
+
+.last-name {
+
+}
+
+.phone-number {
+
+}
+
+.confirm-password {
+
+}
+.register {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 2px 2px 5px rgb(221, 217, 217);
+}
+
+.login {
+
+}
