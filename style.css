@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@100&display=swap');
 @font-face {
     font-family: Perfograma;
     src: url(fonts/Perfograma.otf);
@@ -8,9 +8,11 @@
     src: url(fonts/Gidole-Regular.ttf); 
 }
 body {
-    background-color: #FCF6F5FF;
+    background: #02071d;
     margin: 0px;
     font-family: lato, sans-serif;
+    font-weight: 300;
+    color: white;
     display: flex;
     flex-direction: row;
 }
@@ -30,29 +32,39 @@ body {
 }
 
 .content {
-
-    margin: 100px;
+margin-top:  100px;
+display: flex;
+flex-direction: column;
 }
 
+
 .main-title {
+    width: 700px;
+    margin-bottom: 10px;
+    padding-left: 100px;
     margin-top: 20px;
     font-size: 2rem;
+    
 }
 
 .sub-title {
-    font-size: 1.7rem;
+    padding-left: 100px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
 }
 .form {
-    background-color: white;
+    padding-left: 100px;
 }
 
 .form-header {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 form {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 100px;
 }
 
 form div {
@@ -62,45 +74,53 @@ form div {
 }
 
 input {
+    background-color: #02071d;
+    color: rgb(128, 125, 125);
     -webkit-appearance: none;
-    width: 300px;
-    height: 30px;
-    border: solid black 1px;
-    border-radius: 5px;
+    width: 400px;
+    height: 20px;
+    border: solid rgb(68, 66, 66) 0.5px;
+    border-radius: 3px;
 }
 
 
-.first-name {
-
+#first-name:focus,#email:focus,#password:focus,#last-name:focus,#phone-number:focus,#confirm-password:focus {
+    outline: none;
+    padding: 10px;
+    border: solid #570080 1px;
 }
 
-.email {
 
-}
-
-.password {
-
-}
-
-.last-name {
-
-}
-
-.phone-number {
-
-}
-
-.confirm-password {
-
-}
 .register {
-    width: 300px;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 250px;
     height: 60px;
+    font-size: 1.5rem;
+    font-family: lato;
+    font-weight:700;
+    color: #570080;
+    border: solid #570080 3px;
+    background-color: #02071d;
     border-radius: 10px;
-    border-color: transparent;
-    box-shadow: 2px 2px 5px rgb(221, 217, 217);
+}
+.register:hover {
+    cursor: pointer;
 }
 
 .login {
+    padding-left: 100px;
+}
 
+.noMatch {
+    border: solid red 1px;
+}
+
+
+
+.noMatchMessage::after {
+    content:"*Passwords do not match";
+    color: red;
+    position: absolute;
+    font-size: 0.8rem;
 }
